@@ -1,0 +1,23 @@
+name: Qodana
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+
+jobs:
+  qodana:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 'Qodana Scan'
+        uses: JetBrains/qodana-action@v2023.1.0
+        with:
+          project-dir: 'burger-builder'
+        env:
+          QODANA_TOKEN: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiJ6cUo0aiIsInByb2plY3QiOiJwUUxOWSIsInRva2VuIjoiQURtRGQifQ.nKRH_F4-LWc4UdEO6KxRh7AOHgQX4QTwtRBWu2s4mvQ'
