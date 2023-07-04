@@ -20,4 +20,4 @@ jobs:
         with:
           project-dir: 'burger-builder'
         env:
-          QODANA_TOKEN: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiJ6cUo0aiIsInByb2plY3QiOiJwUUxOWSIsInRva2VuIjoiQURtRGQifQ.nKRH_F4-LWc4UdEO6KxRh7AOHgQX4QTwtRBWu2s4mvQ'
+          QODANA_TOKEN: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb24iOiJ6cUo0aiIsInByb2plY3QiOiIza29sTCIsInRva2VuIjoiQWxEajAifQ.uuycmEGakjjfPFBMqg_xY7RrldMw7hrXVXxyA20mH78'
